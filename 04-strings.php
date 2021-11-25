@@ -37,8 +37,8 @@ $longText = "
   I am 27,
   I love my daughter
 ";
-echo $longText . '<br>' . PHP_EOL;
-echo nl2br($longText) . '<br>' . PHP_EOL;
+echo $longText . '<br>' . PHP_EOL;//In se thanh mot dong
+echo nl2br($longText) . '<br>' . PHP_EOL;//In ra se de nguyen format cua code
 
 // Multiline text and reserve html tags
 $longText = "
@@ -46,9 +46,9 @@ $longText = "
   I am <b>27</b>,
   I love my daughter
 ";
-echo "1 - " . $longText . '<br>';
-echo "2 - " . nl2br($longText) . '<br>';
-echo "3 - " . htmlentities($longText) . '<br>' . PHP_EOL;
+echo "1 - " . $longText . '<br>';//In binh thuong
+echo "2 - " . nl2br($longText) . '<br>';//In giu nguyen format cua code
+echo "3 - " . htmlentities($longText) . '<br>' . PHP_EOL;//khong bien dich html trong php
 echo "4 - " . nl2br(htmlentities($longText)) . '<br>' . PHP_EOL;
-echo "5 - " . html_entity_decode(htmlentities($longText)) . '<br>' . PHP_EOL;
-echo "6 - " . htmlspecialchars($longText) . '<br>' . PHP_EOL;
+echo "5 - " . html_entity_decode(htmlentities($longText)) . '<br>' . PHP_EOL;//bien dich html trong php
+echo "6 - " . htmlspecialchars($longText) . '<br>' . PHP_EOL;//khong bien dich html trong php
